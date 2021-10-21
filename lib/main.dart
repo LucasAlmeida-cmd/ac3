@@ -1,5 +1,6 @@
-import 'package:ac3/PrimeiraRota.dart';
 import 'package:flutter/material.dart';
+import 'Menu.dart';
+
 void main() {
 
   runApp(MaterialApp(
@@ -7,7 +8,7 @@ void main() {
     theme: ThemeData(
         primarySwatch: Colors.blue
     ),
-    home: PrimeiraRota(),
+    home: Principal(),
   )
   );
 }

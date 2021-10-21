@@ -5,7 +5,7 @@ class TerceiraRota extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Segunda Rota (tela)"),
+        title: Text("Terceira Tela"),
       ),
       body: Center(
 

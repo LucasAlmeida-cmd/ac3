@@ -1,4 +1,4 @@
-import 'package:ac3/presets/fonts.dart';
+import 'package:ac3/themes/fonts.dart';
 import 'package:ac3/widget/mario.dart';
 import 'package:flutter/material.dart';
 
@@ -13,37 +13,42 @@ class TerceiraRota extends StatelessWidget {
         children: [
           Expanded(
             flex: 4,
-            child: Container(
-                color: Colors.blue,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    SizedBox(height: 50),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        'Lucas Almeida RA: ',
-                        style: Fonts.subtitle,
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        'Mateus da Silva Lima RA: 1904235',
-                        style: Fonts.subtitle,
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      alignment: Alignment(-1, 1),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 210.0),
-                        child: MarioModel(),
-                      ),
-                    ),
-                  ],
-                )),
+            child: Stack(
+              children: [
+                Container(
+                    color: Colors.blue,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SizedBox(height: 50),
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Lucas Almeida RA: ',
+                                style: Fonts.subtitle,
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Mateus da Silva Lima RA: 1904235',
+                                style: Fonts.subtitle,
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Container(
+                          alignment: Alignment(-1, 1),
+                          child: MarioModel(direction: 'right'),
+                        ),
+                      ],
+                    )),
+              ],
+            ),
           ),
           Container(
             height: 10,

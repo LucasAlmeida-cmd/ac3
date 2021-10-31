@@ -1,3 +1,4 @@
+import 'package:ac3/themes/fonts.dart';
 import 'package:ac3/widget/mario.dart';
 import 'package:flutter/material.dart';
 
@@ -6,7 +7,7 @@ class SegundaRota extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Segunda Tela"),
+        title: Text("Segunda Tela", style: Fonts.title),
       ),
       body: Column(
         children: [
@@ -16,7 +17,9 @@ class SegundaRota extends StatelessWidget {
                 color: Colors.blue,
                 child: Container(
                   alignment: Alignment(-1, 1),
-                  child: MarioModel(),
+                  child: MarioModel(
+                    direction: 'right',
+                  ),
                 )),
           ),
           Container(

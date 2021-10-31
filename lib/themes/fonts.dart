@@ -17,4 +17,9 @@ class Fonts {
       color: Colors.black,
       fontWeight: FontWeight.normal,
       height: 1.5);
+  static final endGame = GoogleFonts.pressStart2p(
+      fontSize: 50,
+      color: Colors.red,
+      fontWeight: FontWeight.bold,
+      height: 1.5);
 }

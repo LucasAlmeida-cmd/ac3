@@ -26,7 +26,7 @@ class TerceiraRota extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Text(
-                                'Lucas Almeida RA: ',
+                                'Lucas Almeida RA: 1902820',
                                 style: Fonts.subtitle,
                                 textAlign: TextAlign.center,
                               ),

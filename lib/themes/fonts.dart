@@ -22,4 +22,9 @@ class Fonts {
       color: Colors.red,
       fontWeight: FontWeight.bold,
       height: 1.5);
+  static final text = GoogleFonts.pressStart2p(
+      fontSize: 12,
+      color: Colors.white,
+      fontWeight: FontWeight.bold,
+      height: 1.5);
 }
